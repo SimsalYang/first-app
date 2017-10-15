@@ -1,3 +1,5 @@
+//在初始化 app.js 最开头就连接数据库
+require('./models/init');
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
