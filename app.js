@@ -45,4 +45,14 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+/**
+ * 更改默认端口
+ 
+var server = app.listen(80, "0.0.0.0", function () {
+  console.log("Server IP Address:" + ip.address());
+  var host = server.address().address;
+  var port = server.address().port;
+  console.log("Application Is Running,Address is http://%s:%s", host, port);
+});
+*/
 module.exports = app;

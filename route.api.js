@@ -7,7 +7,16 @@ router.get('/users', function(req, res, next) {
   res.send('respond with a resource');
 });
 
+<<<<<<< HEAD
 /* POST post content */
+=======
+/* GET posts lists */
+router.get('/posts', function(req, res, next) {
+  res.json({postsList: ['文章1', '文章2', '文章3']});
+});
+
+/* POST posts 
+>>>>>>> 29378d8d5267ae9c528c4d25552b19dfdb39633d
 router.post('/posts',function(req,res,next){
   var title = req.body.title;
   var content = req.body.content;
@@ -30,5 +39,5 @@ router.get('/posts',function(req,res,next){
     res.json({success:true,postsList：posts});
   });
 });
-
+*/
 module.exports = router;
